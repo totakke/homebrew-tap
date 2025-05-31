@@ -1,23 +1,23 @@
 class Bosslint < Formula
   desc "One command to run multiple linters under Git version control"
   homepage "https://github.com/totakke/bosslint"
-  version "0.7.130"
+  version "0.8.137"
 
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/totakke/bosslint/releases/download/v#{version}/bosslint_linux_aarch64"
-      sha256 "5fbc1c091bb7c43be15019181d9311895647ba042960746bd345c0cc4bf72509"
+      sha256 "b1ebd81fb14fd7d48915cfff380f04547f1e3e3d0360a4da5c9557f9d1b36feb"
     else
       url "https://github.com/totakke/bosslint/releases/download/v#{version}/bosslint_linux_amd64"
-      sha256 "4712f84e5f40fcfd44d59d36550584055c3a9389dbae3d0c470d88019cfeadb2"
+      sha256 "15f7d624b8ed4dfff66487e8b9b8fc616916a9b2acfcae50c36f2eb97cb9eecc"
     end
   else
     if Hardware::CPU.arm?
       url "https://github.com/totakke/bosslint/releases/download/v#{version}/bosslint_macos_aarch64"
-      sha256 "9e8ad0f12e3cdd0aae5b13af2a42a54a7ca5cb6af8c6d7e7611342c3417cfd37"
+      sha256 "b186eb69f8b0b7e10fb89c36b0190c5fade387733210e1e9ac9fb584d8c1b2b9"
     else
       url "https://github.com/totakke/bosslint/releases/download/v#{version}/bosslint_macos_amd64"
-      sha256 "b887adbc906fc64eb9eb0858d6126debfb02b575394cc9903f2a56804b0be62a"
+      sha256 "8b7c86b1a6ebafa07f1fc56f0556c6d5a97cf285d5c036a32a247016751ee4b7"
     end
   end
 
